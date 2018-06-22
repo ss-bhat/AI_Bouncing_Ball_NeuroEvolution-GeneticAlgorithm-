@@ -61,6 +61,8 @@ learn the movement of paddle using NN and GA. Which will be explained further be
   Observation: Can obtain score of 25 in around 5-6 generations. Can obtain more if we train
   more. However, its is likely to get stuck at local maxima. (stuck at score 25 can see in below
   graph)
+  
+  ![sim1](https://user-images.githubusercontent.com/32418025/41754774-c286480c-75cb-11e8-8564-4d26a8baf97e.png)
 
 <li> Neural Network.py: Structure of neural network implemented here is 2 input node, single
 hidden layer with 2 nodes and one output node. </li>
