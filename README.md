@@ -81,6 +81,9 @@ hidden layer with 2 nodes and one output node. </li>
 
 ### Simulation Results and Discussion:
 
+![sim2](https://user-images.githubusercontent.com/32418025/41754810-fe09cf2a-75cb-11e8-88bb-0afea46274f8.png)
+![sim3](https://user-images.githubusercontent.com/32418025/41754819-0861ff42-75cc-11e8-9702-bab23761bca3.png)
+
 ### Conclusion:
 
 From the above simulation we can see that for fitness is reached around 21 for 10th
