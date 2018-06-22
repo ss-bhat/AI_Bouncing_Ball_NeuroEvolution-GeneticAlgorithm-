@@ -1,8 +1,8 @@
-Assignment 2: Genetic Algorithm (Neuro Evolution)
+## Assignment 2: Genetic Algorithm (Neuro Evolution)
 Bouncing Ball Game
 Student Id: 17230755 (Swaroop S Bhat)
 
-Overview:
+### Overview:
 
 In this project I have implemented AI bouncing ball game using Neural Network whose
 weights are controlled by Genetic Algorithm. (Neuro Evolution). The Bouncing ball game is
@@ -12,15 +12,16 @@ network. Since, we don’t have specific training data to train neural network, 
 data as input to neural network and its weights is updated using genetic algorithm (using
 score as fitness). Runing instruction is given at the end.
 
-Implementation:
+### Implementation:
 
 This project contains 4 py files –
 
-Game.py – contains bouncing ball game logic.
-Genetic_Algorithm.py – to generate the agents to play bouncing ball game.
-Neural_Network.py – to control the paddle.
-Dynamic_plot.py – used to plot the dynamic graph of fitness vs generations.
-Details:
+#### Game.py – contains bouncing ball game logic.
+#### Genetic_Algorithm.py – to generate the agents to play bouncing ball game.
+#### Neural_Network.py – to control the paddle.
+#### Dynamic_plot.py – used to plot the dynamic graph of fitness vs generations.
+
+#### Details:
 
 Game.py: This file contains logic to play bouncing ball game. Used as GUI (TkInter library in
 python). Contains randomly moving ball and the paddle to bounce the ball. Objective here is
@@ -68,9 +69,9 @@ because to save simulation time. This value is found using experimentation.
 
 Dynamic_plot.py: This used to get dynamic plot of fitness vs no of generations.
 
-Simulation Results and Discussion:
+### Simulation Results and Discussion:
 
-Conclusion:
+### Conclusion:
 
 From the above simulation we can see that for fitness is reached around 21 for 10th
 generation. Moreover, similar fitness value also reached at generation 5, 6 and 7. Hence,
@@ -79,7 +80,7 @@ From above simulations we can see that GA stuck at local maxima. We need to incl
 diversity in order to get out from the local maxima. More generations is also likely to help to
 kick off from local maxima.
 
-Running Instruction:
+### Running Instruction:
 
 Folder structure – Genetic_Algorithm -> Demo, python_vitrual_environment
 Demo -> Dynamic_plot.py, Neural_network.py, Genatic_Algorithm.py, Game.py
