@@ -82,7 +82,7 @@ kick off from local maxima.
 
 ### Running Instruction:
 
-Folder structure – Genetic_Algorithm -> Demo, python_vitrual_environment
+<li> Folder structure – Genetic_Algorithm -> Demo, python_vitrual_environment. </li>
 Demo -> Dynamic_plot.py, Neural_network.py, Genatic_Algorithm.py, Game.py
 Create python virtual environment in Genetic_Algorithm folder
 Required Packages –
@@ -102,7 +102,8 @@ o scipy==1.1.
 o six==1.11.
 o wincertstore==0.
 Run Genetic_Algorithm.py file –
-Reference:
+
+## Reference:
 
 [1]. DJ Oamen – Bouncing ball game code python.
 https://www.youtube.com/watch?v=9tVCYIcwNjw
