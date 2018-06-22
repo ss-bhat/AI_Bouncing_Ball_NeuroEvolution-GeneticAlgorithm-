@@ -93,7 +93,7 @@ From above simulations we can see that GA stuck at local maxima. We need to incl
 diversity in order to get out from the local maxima. More generations is also likely to help to
 kick off from local maxima.
 
-### Running Instruction:
+### Instruction to run code:
 
 <li> Folder structure – Genetic_Algorithm -> Demo, python_vitrual_environment. </li>
 <li> Demo -> Dynamic_plot.py, Neural_network.py, Genatic_Algorithm.py, Game.py </li>
