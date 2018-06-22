@@ -1,0 +1,24 @@
+•	Folder structure – Genetic_Algorithm -> Demo, python_vitrual_environment.
+•	Demo -> Dynamic_plot.py, Neural_network.py, Genatic_Algorithm.py, Game.py.
+•	Create python virtual environment in Genetic_Algorithm folder.
+•	Run Genetic_Algorithm.py file.
+
+
+
+Required Packages - 
+
+certifi==2018.4.16
+curses-util==0.0.6
+cycler==0.10.0
+fuzzywuzzy==0.16.0
+kiwisolver==1.0.1
+matplotlib==2.2.2
+numpy==1.14.5
+Pillow==5.1.0
+pygame==1.9.3
+pyparsing==2.2.0
+python-dateutil==2.7.3
+pytz==2018.4
+scipy==1.1.0
+six==1.11.0
+wincertstore==0.2
