@@ -23,51 +23,59 @@ This project contains 4 py files –
 
 #### Details:
 
-Game.py: This file contains logic to play bouncing ball game. Used as GUI (TkInter library in
+<li> Game.py: This file contains logic to play bouncing ball game. Used as GUI (TkInter library in
 python). Contains randomly moving ball and the paddle to bounce the ball. Objective here is
-learn the movement of paddle using NN and GA. Which will be explained further below.
+learn the movement of paddle using NN and GA. Which will be explained further below. </li>
 
-Genetic_Algorithm.py:
-Steps:
+<li>Genetic_Algorithm.py:
 
-Generate a random population of weights for neural network. Neural network
-architecture used is 2 input node, 1 hidden layer with 2 nodes and one output node.
-So chromosome length is 6 (Bias is handled separately) with random floating
-numbers. Population size is 10.
-Genotype and phenotype mapping here is random floating numbers as weights which
-controls output of neural network which in return controls the movement of paddle.
-Evaluation of fitness: Each Agents (population) is allowed to play a game and its score
-(no of times successful hits) is recorded.
-Fitness function = Score – abs(x_position of ball - x_position of paddle)/(total
-window length i.e. 600)
-abs(x_position of ball - x_position of paddle)/(total window length i.e. 600) is used
-to determine how far is the ball from paddle just before ball hits the ground. This
-ensures the paddle come near ball at each generation i.e. near miss is better.
-Selection: Top 20% Agents (based on fitness) are selected.
-Cross Over – 2 Random choice of selected agents (20%) for crossover and mutation.
-Child1 and child2 from parents are created hoping better solution found and increase
-the diversity.
-Mutation: Mutation rate used is 0.3. Randomly select the single index of the
-chromosome and previous weight + randomly generated number between (-2, 2).
-This process is repeated for 100 generations (excepts the first step).
-Observation: Can obtain score of 25 in around 5-6 generations. Can obtain more if we train
-more. However, its is likely to get stuck at local maxima. (stuck at score 25 can see in below
-graph)
+#### Steps:
 
-Neural Network.py: Structure of neural network implemented here is 2 input node, single
-hidden layer with 2 nodes and one output node.
+  Generate a random population of weights for neural network. Neural network
+  architecture used is 2 input node, 1 hidden layer with 2 nodes and one output node.
+  So chromosome length is 6 (Bias is handled separately) with random floating
+  numbers. Population size is 10.
+  
+  Genotype and phenotype mapping here is random floating numbers as weights which
+  controls output of neural network which in return controls the movement of paddle.
+  Evaluation of fitness: Each Agents (population) is allowed to play a game and its score
+  (no of times successful hits) is recorded.
+  
+  Fitness function = Score – abs(x_position of ball - x_position of paddle)/(total
+  window length i.e. 600)
+  abs(x_position of ball - x_position of paddle)/(total window length i.e. 600) is used
+  to determine how far is the ball from paddle just before ball hits the ground. This
+  ensures the paddle come near ball at each generation i.e. near miss is better.
+  
+  Selection: Top 20% Agents (based on fitness) are selected.
+  
+  Cross Over – 2 Random choice of selected agents (20%) for crossover and mutation.
+  
+  Child1 and child2 from parents are created hoping better solution found and increase
+  the diversity.
+  
+  Mutation: Mutation rate used is 0.3. Randomly select the single index of the
+  chromosome and previous weight + randomly generated number between (-2, 2).
+  
+  This process is repeated for 100 generations (excepts the first step).
+  Observation: Can obtain score of 25 in around 5-6 generations. Can obtain more if we train
+  more. However, its is likely to get stuck at local maxima. (stuck at score 25 can see in below
+  graph)
 
-Input to NN contains 2 features –
+<li> Neural Network.py: Structure of neural network implemented here is 2 input node, single
+hidden layer with 2 nodes and one output node. </li>
 
-Feature 1: x_position_ball – x_position_paddle
-Feature 2: y_position_ball – y_position_paddle
-Output node is given to the paddle controller. If output is <= 0.5 turn left else turn right. The
-weights of the NN is represented as chromosome from genetic algorithm.
+  Input to NN contains 2 features –
 
-Note: Random initialization of weights is done + or – around base or reference value. This is
-because to save simulation time. This value is found using experimentation.
+  Feature 1: x_position_ball – x_position_paddle
+  Feature 2: y_position_ball – y_position_paddle
+  Output node is given to the paddle controller. If output is <= 0.5 turn left else turn right. The
+  weights of the NN is represented as chromosome from genetic algorithm.
 
-Dynamic_plot.py: This used to get dynamic plot of fitness vs no of generations.
+  <b>Note:</b> Random initialization of weights is done + or – around base or reference value. This is
+  because to save simulation time. This value is found using experimentation.
+
+<li> Dynamic_plot.py: This used to get dynamic plot of fitness vs no of generations. </li>
 
 ### Simulation Results and Discussion:
 
@@ -83,25 +91,27 @@ kick off from local maxima.
 ### Running Instruction:
 
 <li> Folder structure – Genetic_Algorithm -> Demo, python_vitrual_environment. </li>
-Demo -> Dynamic_plot.py, Neural_network.py, Genatic_Algorithm.py, Game.py
-Create python virtual environment in Genetic_Algorithm folder
+<li> Demo -> Dynamic_plot.py, Neural_network.py, Genatic_Algorithm.py, Game.py </li>
+<li> Create python virtual environment in Genetic_Algorithm folder. </li>
+
 Required Packages –
-o certifi==2018.4.
-o curses-util==0.0.
-o cycler==0.10.
-o fuzzywuzzy==0.16.
-o kiwisolver==1.0.
-o matplotlib==2.2.
-o numpy==1.14. 5
-o Pillow==5.1.
-o pygame==1.9.
-o pyparsing==2.2.
-o python-dateutil==2.7.
-o pytz==2018.
-o scipy==1.1.
-o six==1.11.
-o wincertstore==0.
-Run Genetic_Algorithm.py file –
+<li> certifi==2018.4. </li>
+<li> curses-util==0.0. </li>
+<li> cycler==0.10. </li>
+<li> fuzzywuzzy==0.16. </li>
+<li> kiwisolver==1.0. </li>
+<li> matplotlib==2.2. </li>
+<li> numpy==1.14. 5 </li>
+<li> Pillow==5.1. </li>
+<li> pygame==1.9. </li>
+<li> pyparsing==2.2. </li>
+<li> python-dateutil==2.7. </li>
+<li> pytz==2018. </li>
+<li> scipy==1.1. </li>
+<li> six==1.11. </li>
+<li> wincertstore==0. </li>
+
+<li> Run Genetic_Algorithm.py file – </li>
 
 ## Reference:
 
