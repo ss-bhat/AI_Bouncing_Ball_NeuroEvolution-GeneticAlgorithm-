@@ -1,6 +1,5 @@
-## Assignment 2: Genetic Algorithm (Neuro Evolution)
+## Genetic Algorithm (Neuro Evolution)
 Bouncing Ball Game
-Student Id: 17230755 (Swaroop S Bhat)
 
 ### Overview:
 
